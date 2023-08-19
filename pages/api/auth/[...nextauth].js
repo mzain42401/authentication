@@ -12,7 +12,7 @@ export const authOptions = {
         
         async authorize({email,password}) {
             const isEmail=checkEmail(email)
-            if (!isEmail) {
+            if (isEmail===undefined) {
                 throw new Error("user not found")
             }
          const isPassword=  await checkPassword(isEmail.password,password)
