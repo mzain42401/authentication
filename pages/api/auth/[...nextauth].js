@@ -19,10 +19,9 @@ export const authOptions = {
          if (!isPassword) {
             throw new Error("wrong password")
          }
-if (isEmail!=undefined && isPassword) {
     
     return{email}
-}
+
 
         }
     }),
