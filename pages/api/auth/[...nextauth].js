@@ -3,7 +3,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { checkEmail, checkPassword } from "../services/helperfunc";
 
 export const authOptions = {
-    secret:'kmkdmf',
+    secret:process.env.NEXTAUTH_SECRET,
     session:{
             jwt:true
         },
